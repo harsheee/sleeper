@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap">
+    <link href='https://css.gg/close.css' rel='stylesheet'>
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
+   
+    <title>Sleep Detector</title>
+  </head>
+  <body>
+
+    <!-- Home  -->
+    <section class="header" id="header">
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="gg-close" onclick="hideMenu()"></i> 
+          <!-- <i class="fa fa-bars" onclick="hideMenu()"></i> -->
+
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#uses">Uses</a></li>
+            <li><a href="http://localhost:8501/">Try</a></li>
+          </ul>
+        </div>
+        <i class="gg-menu" onclick="showMenu()"></i> 
+        <!-- <i class="fa fa-times" onclick="showMenu()"></i> -->
+      </nav>
+
+      <div class="text-box">
+        <h1>SLEEP DETECTOR</h1>
+        <p>
+          An AI based website which detects when a person is sleeping and raises
+          an alarm to wake them up.
+        </p>
+        <a href="http://localhost:8501/" class="hero-btn">Try it Now</a>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+      <h1>About</h1>
+      <p>
+        Sleep Detector is a powerful tool that can help you to stay awake in
+        crucial situations. Got an exam and need to pull an all-nighter? Have to
+        stay for an overnight shift but cannot keep your eyes open? Fear that
+        you might doze of while driving all alone? Sleep Detector has got you
+        all covered up! My Detector uses Artificial Intelligence and Machine
+        Learning to build a face recognition system that detects your facial
+        features and tells whether you are feeling sleepy, drowsy or are full
+        Active! That is not all, the detector also has an alarm- which starts
+        ringing as soon as it detects that you have fallen asleep. And the best
+        part? It is highly accurate and won't keep of buzzing unnecessarily.
+        Don't believe me?<br /><a href="">Try the detector now! </a>
+      </p>
+
+      <div class="row">
+        <div class="uses-col">
+          <img src="images/active.png" alt="image to show demonstration">
+        <div class="layer">
+          <h3>ACTIVE</h3>
+        </div>
+        </div>
+
+        <div class="uses-col">
+          <img src="images/drowsy.png" alt="image to show demonstration">
+        <div class="layer">
+          <h3>DROWSY</h3>
+        </div>
+        </div>
+
+        <div class="uses-col">
+          <img src="images/sleeping.png" alt="image to show demonstration">
+        <div class="layer">
+          <h3>SLEEPING</h3>
+        </div>
+        </div>
+
+
+     </div>
+     
+    </section>
+
+  <!-- USES -->
+
+    <section class="uses" id="uses">
+      <h1>Uses of Sleep Detector</h1>
+      <p>Here are some of the uses of the Sleep Detector:</p>
+
+      <div class="row">
+        <div class="about-col">
+          <h3>While Driving</h3>
+          <p>If you are feeling sleepy while driving and do not want to risk yourself, sleep detector is the perfect option for you! It will detect when you are going to sleep and will ring the alarm waking you up in time! Extremely useful for situations where it's very urgent for you to drive but you're scared you might fall asleep. </p>
+        </div>
+
+        <div class="about-col">
+          <h3>Night Shifts</h3>
+          <p>Sleep Detector is a perfect fit for carrying a night shift! If you feel you might sleep on job, use the detector and it will ring the alarm as soon as it detects that you have dozzed off!</p>
+        </div>
+
+        <div class="about-col">
+          <h3>For Studies</h3>
+          <p>Finishing up an assignment late night? Or have to study for a test all night? Sleep Detector is the perfect website to use! It will ring the alarm to wake you up so that you don't feel guilty about those missed deadlines or unprepared examinations!</p>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- how it works -->
+    <section class="work">
+      <h1>How it works</h1>
+      <p>The Sleep Detector works on OpenCV which detects the faces and then uses a deep learning model which determines whether the user's eyes are opened or closed and to what extent. The steps the detector uses are:</p>
+       
+      
+        <div class="work-col">
+          <h3>Step-1</h3>
+          <p> Take the input as a live videostream </p>
+            <img src="images/video.gif" alt="A gif for camera open demonstration">
+          
+        </div>
+
+        <div class="work-col">
+          <h3>Step-2</h3>
+          <p> Detect the face and create landmarks and/or regions of interest</p>
+          <img src="images/gif2.gif" alt="A gif for face detection">
+        </div>
+
+        <div class="work-col">
+          <h3>Step-3</h3>
+          <p>Detect the left and the right eye respectively and determine whether they are opened or closed or partially opened.</p>
+          <img src="images/gif4.gif" alt="A gif to show left-right eye positioning">
+        </div>
+      </div>
+
+      <div class="work-col" id="rescale">
+        <h3>Step-4</h3>
+        <p>Calculate the sleep score based on the movements and predict whether the person is sleeping or not</p>
+        <img src="images/gif3.gif" alt="Gif to show score"  height="400">
+      </div>
+    </div>
+
+    <div class="work-col " >
+      <h3>Step-5</h3>
+      <p>Ring the Alarm if the user is sleeping to wake them up!</p>
+      <img src="images/gif5.gif" alt="Gif to show sleeping status">
+    </div>
+    
+
+    </section>
+
+      
+<section class="cta">
+  <h1>TRY THE SLEEP DETECTOR TODAY</h1>
+  <a href="" class="hero-btn">Try now</a>
+
+
+</section>
+
+
+<!-- Footer-->
+
+<div class="footer">
+  <p><br> Sleep Detector made by Harshi Gupta</p>
+</div>
+    <!-- Javascript for Toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
+
+
